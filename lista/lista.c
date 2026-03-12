@@ -3,34 +3,26 @@
 #include "lista.h"
 
 Lista* lista_crear()
-{
-    
-    /*
-    TODO:
-
-    1 Crear un apuntador a lista
-    2 Reswevar memoria para lista
-    3 Devolver la lista
-    */
+{ 
+   Lista *l;
+   l=(Lista*)malloc(sizeof(Lista));
+   l->head=NULL;
+   l->tail=NULL;
+   return l:
 }
-
 int lista_vacia(Lista* lista)
 {
     
 }
 
-void lista_insertar_head(Lista* lista, int dato)
+void lista_insertar_head(Lista* lista, int d)
 {
-    /*
-    TODO:
-
-    1 Crear nuevo nodo
-    2 Si lista está vacía:
-        head y tail apuntan al nuevo nodo
-    3 Si no:
-        head apunta al nuevo nodo
-        actualizar tail
-    */
+   Nodo *NewNodo = (Nodo*)malloc(sizeof(Nodo)):
+   NewNodo->dato=d;
+   NewNodo->sig=lista->head
+   lista->head=NewNodo;
+   if (lista->tail=NULL);
+    lista->tail=NewNode
 }
 
 void lista_insertar_tail(Lista* lista, int dato)
